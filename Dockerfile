@@ -15,7 +15,3 @@ RUN \
   echo -e '\n# Node.js\nexport PATH="node_modules/.bin:$PATH"' >> /root/.bashrc
 
 RUN /usr/local/bin/npm install -g bower gulp
-
-RUN echo "deb http://http.debian.net/debian wheezy main" > /etc/apt/sources.list
-RUN apt-get update
-RUN apt-get install -y gettext
