@@ -15,3 +15,4 @@ RUN \
   echo -e '\n# Node.js\nexport PATH="node_modules/.bin:$PATH"' >> /root/.bashrc
 
 RUN /usr/local/bin/npm install -g bower gulp
+RUN /usr/local/bin/pip install awscli
